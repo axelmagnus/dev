@@ -16,6 +16,7 @@ microcontroller.reset():
 This may result in file system corruption when connected to a host computer. Be very careful when calling this! Make sure the device “Safely removed” on Windows or “ejected” on Mac OSX and Linux.
 
 there's also 
-```supervisor.get_previous_traceback()
+```
+supervisor.get_previous_traceback()
 ```
  (after reload, not reset) https://docs.circuitpython.org/en/latest/shared-bindings/supervisor/index.html#supervisor.get_previous_traceback
