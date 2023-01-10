@@ -20,3 +20,10 @@ there's also
 supervisor.get_previous_traceback()
 ```
  (after reload, not reset) https://docs.circuitpython.org/en/latest/shared-bindings/supervisor/index.html#supervisor.get_previous_traceback
+
+there's ````
+supervisor.runtime.usb_connected #=True if connected
+supervisor.runtime.serial_connected
+```
+
+https://docs.circuitpython.org/en/latest/shared-bindings/supervisor/index.html
