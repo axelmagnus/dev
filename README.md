@@ -28,3 +28,11 @@ supervisor.runtime.serial_connected
 ```
 
 https://docs.circuitpython.org/en/latest/shared-bindings/supervisor/index.html
+
+web workflow 
+[1:40 AM]
+writing to file needs SD or some external storage if the host computer is also expecting to be able to edit files on CIRCUITPY, and switching back and forth to which can write requires a reset and running boot.py
+[1:40 AM]
+(nvm could work, but it's a good bit of data to pack)
+[1:44 AM]
+since it's a strong recommendation to use an editor that auto-flushes edits immediately, the microcontroller.reset() Warning is for those edge cases where you may be editing code while code is running and issuing a microcontroller.reset(), or perhaps something else on your host computer is pinging the CIRCUITPY disk (you may not know if auto-reload is off)
